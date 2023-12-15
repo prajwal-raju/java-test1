@@ -1,0 +1,35 @@
+<!-- pom.xml for a simple Maven project -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <!-- Project coordinates -->
+    <groupId>com.example</groupId>
+    <artifactId>my-maven-project1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    <!-- Project dependencies -->
+    <dependencies>
+	    <!-- Add dependencies here -->
+	    <dependency>
+    <groupId>org.netbeans.external</groupId>
+    <artifactId>org-apache-commons-lang3</artifactId>
+    <version>RELEASE130</version>
+            </dependency>
+    </dependencies>
+   <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+   </build>
+</project>
